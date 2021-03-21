@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kórshi.kz</title>
+  <link rel="shorcut icon" href="https://www.theroomieapp.com/wp-content/uploads/2019/02/cropped-logo.png">
+
+</head>
+<body>
+<style>
+    html {
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .commentBox {
+        padding: 1%;
+        width: 96%;
+        border: 1px solid #000;
+        background-color: #f0f0f0;
+        margin-bottom: 10px;
+    }
+
+    .leftPanelImg {
+        width: 10%;
+        float: left;
+    }
+
+    .leftPanelImg img {
+        border-radius: 100%
+    }
+
+    .rightPanel {
+        width: 85%;
+        float: left;
+        margin-left: 1%;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .form {
+        padding: 10px;
+        border: 1px solid #000;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .form input[type="text"],
+    .form textarea,
+    .form imput[type="date"] {
+        border: 1px solid #000;
+        padding: 2px;
+        width: 300px;
+    }
+</style>
+<div class='form'>
+  <img src="" alt="">
+    <h5>Neighbor search application</h5>
+    Surname and name: <input type="text" id="name" /> <br/><br /> Date: <input type="date" id="date" /> <br/><br /> Body: <textarea rows="5" col "30" id="bodyText"></textarea><br /><br />
+    <input type="button" id="addComent" value="Add Comment" />
+</div>
+<div id='container'>
+
+</div>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+    function render(data) {
+
+        var html = "<div class='commentBox'><div class='leftPanelImg'><img src='http://via.placeholder.com/100x100'/></div><div class='rightPanel'><span>" + data.name + "</span><div class='date'>" + data.date + "</div><p>" + data.body + "</p></div><div class='clear'></div></div>";
+
+        $('#container').append(html);
+
+    }
+
+    $(document).ready(function() {
+
+        var coment = [{
+            "name": "Almas ",
+            "date": "02 Apr, 2002",
+            "body": "Неплохая квартира только в общаги лучше!"
+        }];
+
+        for (var i = 0; i < coment.length; i++) {
+            render(coment[i]);
+
+        }
+
+        $('#addComent').click(function() {
+            var addObj = {
+                "name": $('#name').val(),
+                "date": $('#date').val(),
+                "body": $('#bodyText').val()
+            };
+
+            coment.push(addObj);
+            render(addObj);
+            $('#name').val('');
+            $('#date').val('dd/mm/yyyy');
+            $('#bodyText').val('');
+        });
+    });
+</script>
+</body>
+</html>

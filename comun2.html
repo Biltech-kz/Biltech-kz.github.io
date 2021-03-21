@@ -1,0 +1,177 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="menu.css">
+   <script src="https://code.jquery.com/jquery-3.5.1.js" crossorigin="anonymous">
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kórshi.kz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="find1.css">
+<script src="comun2.js"></script>
+<link rel="shorcut icon" href="https://www.theroomieapp.com/wp-content/uploads/2019/02/cropped-logo.png">
+<header>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="menu.html"> Kórshi<span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="consul.html">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="menu.html">FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#h66">Contacts</a>
+     </li>
+      <li class="nav-item">
+        <a class="nav-link" href="apart.html">Room for rent</a>
+     </li>
+    </ul>
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</div>
+</nav>
+    </head>
+<body>
+
+<div class="card bg-primary text-white">
+  <div class="card-header text-center text-white">
+  </div>
+
+  </div>
+    <div class="row">
+      <div class="col-12 bg-primary text-light text-center p-4">
+<h4>Rooms for Rent in Nur-Sultan</h4>
+      </div>
+    </div>
+    <script type="text/javascript">
+        var qtyTotal = 0;
+        var priceTotal = 0;
+
+        function updateForm() {
+            var product = document.getElementById("product").value;
+
+            var qty = document.getElementById("quantity").value;
+            qtyTotal = qtyTotal + parseInt(qty);
+            document.getElementById("qtyTotals").innerHTML=qtyTotal;
+
+            var price = document.getElementById("price").value;
+            priceTotal = priceTotal + parseInt(price);
+            document.getElementById("priceTotals").innerHTML=priceTotal;
+
+            var table=document.getElementById("results");
+            var row=table.insertRow(-1);
+            var cell1=row.insertCell(0);
+            var cell2=row.insertCell(1);
+            var cell3=row.insertCell(2);
+            cell1.innerHTML=product;
+            cell2.innerHTML=qty;
+            cell3.innerHTML=price;
+        }
+    </script>
+    <form name="order" id="order">
+        <table>
+            <tr>
+                <td>
+                    <label for="product">Service:</label>
+                </td>
+                <td>
+                    <input id="product" name="product" title="Please enter only alphabetic characters" type="text" size="28" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="quantity">Quantity:</label>
+                </td>
+                <td>
+                    <input id="quantity" name="quantity" title="Enter item quantity" width="196px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="price">Price:</label>
+                </td>
+                <td>
+                    <input id="price" name="price" title="Please enter only numeric characters" size="28" />
+                </td>
+            </tr>
+        </table>
+        <button type="button" onClick="updateForm();"/>Add To Table</button>
+    </form>
+    <br>
+
+    <table id="results" width="360">
+        <thead>
+        <tr>
+            <th scope="col" width="120">Service</th>
+            <th scope="col" width="120">Quantity</th>
+            <th scope="col" width="120">Price</th>
+        </tr>
+        </thead>
+    </table>
+
+    <table id="resultTotals" width="360">
+    <tr>
+        <td scope="col" width="120">Totals</td>
+        <td scope="col" width="120"><div id="qtyTotals"></div></td>
+        <td scope="col" width="120"><div id="priceTotals"></div></td>
+    </tr>
+    </table>
+</div>
+ <footer class="card bg-primary text-white">
+     <div class="row">
+       <div class="col-lg-12 col-md-12 col-sm-20">
+       </div>
+    </div>
+    <br>
+    <h2 class="text-uppercase font-weight-bold" id="h66">contact info</h2>
+    &nbsp;&nbsp;&nbsp;<img src="images\biltech2.png" alt="Biltech" height="80px"width="270px">
+    <br>
+    Нур-Султан
+    <br>
+    Бизнес-центр EXPO, блок C.1.
+    <br>
+    Казахстан, 010000
+    <br>
+    +7 (707)862-01-95
+    <br>
+    <br>
+almas_nur02@mail.ru
+    <br>
+  <div class="row mb-auto p-2">
+        <a href="https://www.instagram.com/korshi.kz/" class="px-0">
+    <img src="social\instagram.png" alt="" height="80px" weight="100px">
+        </a>
+        <a href="https://t.me/joinchat/AAAAAFXYfCsrlILyYVnoHA" >
+    <img src="social\telegram.png" alt="" height="80px" weight="100px">
+        </a>
+        <a href="https://web.whatsapp.com/"  class="px-0">
+    <img src="social\whatsapp.png" alt="" height="80px" weight="100px">
+        </a>
+        <a href="https://drive.google.com/file/d/1kQx9_7a5tiqWbWI70SzanVcaSinisA4c/view?usp=sharing" >
+    <img src="social\youtube.png" alt="" height="80px" weight="100px">
+    </a>
+   </div>
+   <script type="text/javascript">
+   $('#myCollapsible').collapse({
+ toggle: false
+ })
+   </script>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   &nbsp;&nbsp;&nbsp;<img src="images\biltech2.png" alt="Biltech" height="80px"width="270px" >
+  </footer>
+   </body>
+</html>

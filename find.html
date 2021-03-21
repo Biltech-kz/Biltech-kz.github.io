@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="shorcut icon" href="https://www.theroomieapp.com/wp-content/uploads/2019/02/cropped-logo.png">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Korshi</title>
+<link rel="stylesheet"type="text/css" href="find.css">
+
+<hr>
+  </head>
+  <body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+    <header class="viewport-header">
+      <h1>
+        <span>Application for an apartment</span>
+      </h1>
+    </header>
+    <main>
+    <form name="theForm" id="theForm" action="FormAndTable.html" method="post">
+                First Name: <input type="text" id="fname"><span style="color:red" id="error1"></span><br>
+                Last Name: <input type="text" id="lname"><br>
+                Date of Birth: <input type="text" id="dob"><br>
+                Gender: <input type="text" id="Gender"><br>
+
+                <input type="button" value="Save" id="btnSave">
+                <a href="menu.html">
+                <button type="button" name="button">Back</button>
+                </a>
+            </form>
+            <!-- Instead of document.write, which writes over the document, set up a placeholder
+                 for output that starts off empty, but at least is positioned in the DOM ahead of time. -->
+            <div id="outputArea"></div>
+
+<script src="myscripts.js"></script>
+  </body>
+
+</html>

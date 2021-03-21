@@ -1,0 +1,213 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="menu.css">
+   <script src="https://code.jquery.com/jquery-3.5.1.js" crossorigin="anonymous">
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kórshi.kz</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="find1.css">
+<script src="comun2.js"></script>
+<link rel="shorcut icon" href="https://www.theroomieapp.com/wp-content/uploads/2019/02/cropped-logo.png">
+<header>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="menu.html">Kórshi<span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#FAQ">FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#h66">Contacts</a>
+     </li>
+      <li class="nav-item">
+        <a class="nav-link" href="apart.html">Room for rent</a>
+     </li>
+    </ul>
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</div>
+</nav>
+    </head>
+<body>
+
+<div class="card bg-primary text-white">
+  <div class="card-header text-center text-white">
+  </div>
+
+  </div>
+    <div class="row">
+      <div class="col-12 bg-primary text-light text-center p-4">
+<h4>Rooms for Rent in Nur-Sultan</h4>
+      </div>
+    </div>
+<style>
+    html {
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .commentBox {
+        padding: 1%;
+        width: 100%;
+        border: 1px solid #000;
+        background-color: #f0f0f0;
+        margin-bottom: 10px;
+    }
+
+    .leftPanelImg {
+        width: 10%;
+        float: left;
+    }
+
+    .leftPanelImg img {
+        border-radius: 100%
+    }
+
+    .rightPanel {
+        width: 85%;
+        float: left;
+        margin-left: 1%;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .form {
+        padding: 10px;
+        border: 1px solid #000;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .form input[type="text"],
+    .form textarea,
+    .form imput[type="date"] {
+        border: 1px solid #000;
+        padding: 2px;
+        width: 300px;
+    }
+</style>
+<div class='form'>
+  <img src="http://s1.iconbird.com/ico/2013/10/464/w512h5121380984834search.png" height="100px" width="100px">
+    <h5>Neighbor search application</h5>
+    Surname and name: <input type="text" id="name" /> <br/><br />
+    Date of birth: <input type="date" id="date" /> <br/><br />
+     Hobby: <textarea rows="5" col "30" id="bodyText"></textarea><br /><br />
+    <input type="button" id="addComent" value="Add Comment" />
+</div>
+<div id='container'>
+
+</div>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+    function render(data) {
+
+        var html = "<div class='commentBox'><div class='leftPanelImg'><img src='http://via.placeholder.com/100x100'/></div><div class='rightPanel'><span>" + data.name + "</span><div class='date'>" + data.date + "</div><p>" + data.body + "</p></div><div class='clear'></div></div>";
+
+        $('#container').append(html);
+
+    }
+
+    $(document).ready(function() {
+
+        var coment = [{
+            "name": "Almas Nurakhmetov",
+            "date": "02 Apr, 2002",
+            "body": "Reading business and financial magazines"
+        }];
+
+        for (var i = 0; i < coment.length; i++) {
+            render(coment[i]);
+
+        }
+
+        $('#addComent').click(function() {
+            var addObj = {
+                "name": $('#name').val(),
+                "date": $('#date').val(),
+                "body": $('#bodyText').val()
+            };
+
+            coment.push(addObj);
+            render(addObj);
+            $('#name').val('');
+            $('#date').val('dd/mm/yyyy');
+            $('#bodyText').val('');
+        });
+    });
+</script>
+</body>
+ <footer class="card bg-primary text-white">
+
+     <div class="row">
+       <div class="col-lg-12 col-md-12 col-sm-20">
+       </div>
+    </div>
+    <br>
+    <h2 class="text-uppercase font-weight-bold" id="h66">contact info</h2>
+    &nbsp;&nbsp;&nbsp;<img src="images\biltech2.png" alt="Biltech" height="80px"width="270px">
+    <br>
+    Нур-Султан
+    <br>
+    Бизнес-центр EXPO, блок C.1.
+    <br>
+    Казахстан, 010000
+    <br>
+    +7 (707)862-01-95
+    <br>
+    <br>
+almas_nur02@mail.ru
+    <br>
+  <div class="row mb-auto p-2">
+        <a href="https://www.instagram.com/korshi.kz/" class="px-0">
+    <img src="social\instagram.png" alt="" height="80px" weight="100px">
+        </a>
+        <a href="https://t.me/joinchat/AAAAAFXYfCsrlILyYVnoHA" >
+    <img src="social\telegram.png" alt="" height="80px" weight="100px">
+        </a>
+        <a href="https://web.whatsapp.com/"  class="px-0">
+    <img src="social\whatsapp.png" alt="" height="80px" weight="100px">
+        </a>
+        <a href="https://drive.google.com/file/d/1kQx9_7a5tiqWbWI70SzanVcaSinisA4c/view?usp=sharing" >
+    <img src="social\youtube.png" alt="" height="80px" weight="100px">
+    </a>
+   </div>
+   <script type="text/javascript">
+   $('#myCollapsible').collapse({
+ toggle: false
+ })
+   </script>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   &nbsp;&nbsp;&nbsp;<img src="images\biltech2.png" alt="Biltech" height="80px"width="270px" >
+  </footer>
+   </body>
+</html>

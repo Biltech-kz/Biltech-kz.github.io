@@ -1,0 +1,133 @@
+ *  {
+margin: 0;
+padding: 0;
+}
+
+/* html{
+  background-color: #b3ffff;
+  text-align: center;
+} */
+/* #text{
+  font-family: "Comic Sans MS",cursive,sans-serif;
+  text-align: center;
+}
+#nameDiv{
+  margin-top: 50px;
+}
+.input{
+  font-size: 25px;
+  color: #004d00;
+  font-weight: 700;
+  font-family: cursive;
+margin: 20px;
+} */
+#entry{
+  width: 150px;
+  height: 40px;
+  font-size: 23px;
+  font-family: "Comic Sans MS",cursive,sans-serif;
+  border-color: #001a66;
+  color: whitesmoke;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+  margin: 30px;
+}
+table{
+  border-collapse: collapse;
+  width: 50%;
+  margin: 50px auto;
+border-color: burlywood;
+}
+table,th,td{
+  border: 2px solid black;
+  padding: 5px;
+
+}
+th{
+  font-size: 30px;
+  font-weight: 700;
+  font-family: Arial;
+}
+td{
+  font-size: 25px;
+  color: white;
+  font-weight: 400;
+  font-family: Georgia;
+}
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+html, body {
+  height: 100%;
+}
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 150%;
+  line-height: 1.4;
+}
+body {
+  margin: 0;
+}
+
+.viewport-header {
+  position: relative;
+  height: 50vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Syncopate', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3vw;
+  line-height: 1.2;
+  font-size: 3vw;
+  text-align: center;
+  span {
+    display: block;
+    font-size: 10vw;
+    letter-spacing: -1.3vw;
+  }
+}
+
+main {
+  width: 80vw;
+  left: 10%;
+  height: 40vh;
+  overflow: auto;
+  background: rgba(black, 0.66);
+  color: white;
+  position: relative;
+  padding: 1rem;
+}
+#theForm{
+  padding: 10px;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+  text-align: center;
+}
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

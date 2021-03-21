@@ -1,0 +1,147 @@
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 350px;
+  height: 300px;
+  border-radius: 60%;
+}
+h1 {
+  font-family: 'Abril Fatface', serif;
+  font-size: 46px;
+}
+a{
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  font-weight: bold;
+}
+ul{
+display: flex;
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+.navbar-collapse{
+  justify-content: flex-end;
+}
+
+ul:hover li:not(:hover) a {
+  color:BLACK;
+  opacity: 0.1;
+}
+p{
+  text-align: center;
+}
+#h66{
+  text-align:center;
+}
+.slider{
+  margin-bottom: 50px;
+}
+.right-side img{
+padding-top: 100px;
+text-align:left;
+}
+#h33{
+text-align: right;
+}
+#div1{
+  text-align: center;
+
+}
+button{
+  background-color:#339EFF;
+}
+h2{
+color: white;
+
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+  /* background-color:#339EFF; */
